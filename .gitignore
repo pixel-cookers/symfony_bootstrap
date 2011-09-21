@@ -7,6 +7,11 @@
 /d.bat
 /web/frontend_dev.php
 /web/index.php
+/config/propel.ini
+/config/databases.yml
+/apps/frontend/config/app.yml
+/apps/frontend/config/factories.yml
+/apps/frontend/config/settings.yml
 /cache
 /log
 /web/uploads

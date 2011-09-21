@@ -1,0 +1,77 @@
+prod:
+  logger:
+    class:   sfNoLogger
+    param:
+      level:   err
+      loggers: ~
+  mailer:
+    param:
+      delivery_strategy: realtime
+      logging:           %SF_LOGGING_ENABLED%
+      charset:           %SF_CHARSET%
+      transport:
+        class: Swift_SmtpTransport
+        param:
+          host:       localhost
+          port:       25
+          encryption: ~
+          username:   ~
+          password:   ~
+  response:
+    class: sfWebResponse
+    param:
+      send_http_headers: false
+
+preprod:
+  mailer:
+    param:
+      delivery_strategy: realtime
+      logging:           %SF_LOGGING_ENABLED%
+      charset:           %SF_CHARSET%
+      transport:
+        class: Swift_SmtpTransport
+        param:
+          host:       localhost
+          port:       25
+          encryption: ~
+          username:   ~
+          password:   ~
+
+dev:
+  mailer:
+    param:
+      delivery_strategy: single_address
+      delivery_address:  EMAIL_ADDRESS
+      transport:
+        class: Swift_SmtpTransport
+        param:
+          host:       smtp.gmail.com
+          port:       465
+          encryption: ssl
+          username:   USERNAME
+          password:   PASSWORD
+  logger:
+    class: sfAggregateLogger
+    param:
+      level: debug
+      loggers:
+        sf_web_debug:
+          class: sfWebDebugLogger
+          param:
+            level: debug
+            condition:       %SF_WEB_DEBUG%
+            xdebug_logging:  false
+            web_debug_class: sfWebDebug
+
+all:
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+
+  view_cache_manager:
+    class: sfViewCacheManager
+    param:
+      cache_key_use_vary_headers: true
+      cache_key_use_host_name:    true

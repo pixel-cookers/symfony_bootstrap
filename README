@@ -25,12 +25,14 @@ Utilisation
 		Privilèges spécifiques à une table : NOM_BDD
 		Tout cocher, Exécuter
 
+[ ]Copier le fichier /data/install/propel.ini dans /config
 [ ]Saisir les champs du fichier /config/propel.ini
 		propel.project = NOM_PROJET
 		propel.database.url = mysql:host=localhost;dbname=NOM_BDD
 		propel.database.user = NOM_USER_BDD
 		propel.output.dir = PATH\TO\NOM_PROJET
 
+[ ]Copier le fichier /data/install/databases.yml dans /config
 [ ]Saisir les champs du fichier /config/databases.yml
 		dsn : 'mysql:host=localhost;dbname=NOM_BDD'
 		username : NOM_USER
@@ -43,6 +45,7 @@ Utilisation
 [ ]Ajouter le domaine associé dans votre fichier host :
 		127.0.0.X          www.DOMAINE.dev
 
+[ ]Copier les fichiers settings.yml, app.yml et factories.yml depuis /data/install/ dans /apps/frontend/config
 [ ]Saisir le champs remember_cookie_name dans /frontend/config/app.yml
 [ ]Saisir le champs delivery_address dans /frontend/config/factories.yml pour recevoir les mails envoyés par l'application en environnement de dév
 [ ]Remplacer les champs username et password du mailer dans /frontend/config/factories.yml par vos login et mdp pour l'envoi de mail en dév
