@@ -1,0 +1,3 @@
+[submodule "plugins/sfPropelORMPlugin"]
+	path = plugins/sfPropelORMPlugin
+	url = git://github.com/propelorm/sfPropelORMPlugin.git
