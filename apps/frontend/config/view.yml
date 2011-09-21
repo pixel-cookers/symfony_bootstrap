@@ -1,0 +1,16 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     fr
+    #robots:       index, follow
+
+  stylesheets:    [bootstrap/bootstrap.less]
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout

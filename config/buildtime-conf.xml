@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <propel>
+        <datasources default="propel">
+            <datasource id="propel">
+                <adapter>mysql</adapter>
+                <connection>
+                    <dsn>mysql:host=localhost;dbname=sfbootstrap</dsn>
+                    <user>sfbootstrap</user>
+                    <password></password>
+                </connection>
+            </datasource>
+        </datasources>
+    </propel>
+</config>

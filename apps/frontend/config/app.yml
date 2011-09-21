@@ -1,0 +1,16 @@
+all:
+  sf_guard_plugin:
+    success_signin_url:           dashboard/index
+    success_signout_url:          main/index
+    remember_key_expiration_age:  2592000 # 30 jours
+    remember_cookie_name:         NOM_COOKIE_RememberMe
+    
+prod:
+  sf_less_plugin:
+    compile:  false
+    
+dev:
+  sf_less_plugin:
+    compile:  false
+    use_js:   true
+    use_compression:    false

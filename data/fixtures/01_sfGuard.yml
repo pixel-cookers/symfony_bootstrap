@@ -1,0 +1,116 @@
+sfGuardUser:
+  sgu_administrateur:
+    username:       admin
+    password:       admin
+    is_super_admin: true
+  sgu_ludovic:
+    username:       ludovic
+    password:       ludovic
+    is_super_admin: false
+  sgu_benjamin:
+    username:       benjamin
+    password:       benjamin
+    is_super_admin: false
+  sgu_eymeric:
+    username:       eymeric
+    password:       eymeric
+    is_super_admin: false
+  sgu_michel:
+    username:       michel
+    password:       michel
+    is_super_admin: false
+  sgu_nicolas:
+    username:       nicolas
+    password:       nicolas
+    is_super_admin: false
+  sgu_colin:
+    username:       colin
+    password:       colin
+    is_super_admin: false
+  sgu_jeremie:
+    username:       jeremie
+    password:       jeremie
+    is_super_admin: false
+    
+sfGuardUserProfile: 
+  sgu_admin_profile: 
+    user_id: sgu_administrateur
+    genre: 0
+    first_name: Admin
+    last_name: Admin
+    email: admin@pixel-cookers.com
+  sgu_ludovic_profile: 
+    user_id: sgu_ludovic
+    genre: 0
+    first_name: Ludovic
+    last_name: Meyer
+    email: ludovic@pixel-cookers.com
+  sgu_benjamin_profile: 
+    user_id: sgu_benjamin
+    genre: 0
+    first_name: Benjamin
+    last_name: Viaud
+    email: benjamin@pixel-cookers.com
+  sgu_eymeric_profile: 
+    user_id: sgu_eymeric
+    genre: 0
+    first_name: Eymeric
+    last_name: Taelman
+    email: eymeric@pixel-cookers.com
+  sgu_michel_profile: 
+    user_id: sgu_michel
+    genre: 0
+    first_name: Michel
+    last_name: Parpaillon
+    email: michel@pixel-cookers.com
+  sgu_nicolas_profile: 
+    user_id: sgu_nicolas
+    genre: 0
+    first_name: Nicolas
+    last_name: Dufreche
+    email: nicolas@pixel-cookers.com
+  sgu_colin_profile: 
+    user_id: sgu_colin
+    genre: 0
+    first_name: Colin
+    last_name: Bellino
+    email: colin@pixel-cookers.com
+  sgu_jeremie_profile: 
+    user_id: sgu_jeremie
+    genre: 0
+    first_name: Jeremie
+    last_name: Augustin
+    email: jeremie@pixel-cookers.com
+
+sfGuardGroup:
+  sgg_administrateur:
+    name:           administrateur
+    description:    Administrateurs
+#  Ajouter ici les groupes en fonction de l'application
+#  sgg_nom_du_groupe:
+#    name:           nom_du_groupe
+#    description:    description du groupe
+    
+sfGuardUserGroup:
+  sgug_administrateur:
+    group_id:       sgg_administrateur
+    user_id:        sgu_administrateur
+#  sgug_candidat_1:
+#    group_id:       sgg_nom_du_groupe
+#    user_id:        sgu_ludovic
+    
+sfGuardPermission:
+  sgp_administrateur:
+    name:           administrateur
+    description:    Administrateurs
+#  sgp_nom_de_la_permission:
+#    name:           nom_de_la_permission
+#    description:    description de la description
+    
+sfGuardGroupPermission:
+  sggp_1:
+    group_id:       sgg_administrateur
+    permission_id:  sgp_administrateur
+#  sggp_2:
+#    group_id:       sgg_nom_du_groupe
+#    permission_id:  sgp_nom_de_la_permission

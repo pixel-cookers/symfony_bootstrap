@@ -1,0 +1,42 @@
+prod:
+  .settings:
+    no_script_name:         true   # Pas de frontend_dev.php dans l'url
+    logging_enabled:        false  # Absence de log pour petit gain de performance
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (E_ALL | E_STRICT)."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    # Form security secret (CSRF protection)
+    csrf_secret:            CSRF_SECRET
+    
+    # Set default Timezone
+    default_timezone:       Europe/Paris
+    default_culture:        fr_FR
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+    enabled_modules:        [default, sfGuardAuth]
+    standard_helpers:       [Partial, jQuery, Date, LessCss]
+    
+    jquery_core:            jquery-1.6.4.min.js
+    
+  .actions:
+    login_module:           sfGuardAuth
+    login_action:           signin
+     
+    secure_module:          sfGuardAuth
+    secure_action:          secure
+
+    error_404_module:       main
+    error_404_action:       error404
