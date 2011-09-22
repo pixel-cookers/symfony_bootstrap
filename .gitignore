@@ -12,6 +12,7 @@
 /apps/frontend/config/app.yml
 /apps/frontend/config/factories.yml
 /apps/frontend/config/settings.yml
+/data/vhost.txt
 /cache
 /log
 /web/uploads
