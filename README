@@ -37,6 +37,7 @@ Utilisation
 		dsn : 'mysql:host=localhost;dbname=NOM_BDD'
 		username : NOM_USER
 
+[ ]Copier le fichier /data/install/vhost.txt dans /data
 [ ]Éditer le fichier \data\vhost.txt
 [ ]Inclure celui-ci dans votre config Apache (httpd.conf)  :
 		# NOM_PROJET
