@@ -2,28 +2,28 @@ SYMFONY BOOSTRAP 1.0
 
 Versions:
      Symfony : 1.4.13
-     Bootstrap Twitter : 1.3.0 (DOC : http://twitter.github.com/bootstrap)
+     Bootstrap Twitter : 1.3.0
  
 Plugins  : 
-     sfPropelORMPlugin (1.1.2 => Propel 1.6) (DOC : https://raw.github.com/propelorm/sfPropelORMPlugin/master/doc/admin_generator.md)
+     sfPropelORMPlugin (1.1.2 => Propel 1.6)
      sfGuardPlugin (4.0.2)
-     sfJqueryReloadedPlugin (1.4.3 => jQuery 1.6.4) (DOC : http://jqapi.com)
+     sfJqueryReloadedPlugin (1.4.3 => jQuery 1.6.4)
      sfFormExtraPlugin (1.1.3)
      sfLessPlugin (1.1.0 => Less 1.1.3)
 
-Fonctionnalités : 
+FonctionnalitÃ©s : 
      Configuration initiale (settings.yml, factories.yml, app.yml)
      Envoi de mails (En cours)
      Register/Login/Logout/ForgotPass/Account (En cours)
 
 Utilisation
 
-[ ]Créer le dossier du projet NOM_PROJET
+[ ]CrÃ©er le dossier du projet NOM_PROJET
 [ ]Cloner le repo Github
-[ ]Créer la BDD du projet (utf8_general_ci) et l'utilisateur associé
-		Privilèges : Ajouter un utilisateur (NOM_USER_BDD, local, aucun mot de passe)
-		Privilèges spécifiques à une table : NOM_BDD
-		Tout cocher, Exécuter
+[ ]CrÃ© la BDD du projet (utf8_general_ci) et l'utilisateur associÃ©
+		PrivilÃ¨s : Ajouter un utilisateur (NOM_USER_BDD, local, aucun mot de passe)
+		PrivilÃ¨s spÃ©fiques Ã  une table : NOM_BDD
+		Tout cocher, ExÃ©cuter
 
 [ ]Copier le fichier /data/install/propel.ini dans /config
 [ ]Saisir les champs du fichier /config/propel.ini
@@ -38,18 +38,18 @@ Utilisation
 		username : NOM_USER
 
 [ ]Copier le fichier /data/install/vhost.txt dans /data
-[ ]Éditer le fichier \data\vhost.txt
+[ ]Editer le fichier \data\vhost.txt
 [ ]Inclure celui-ci dans votre config Apache (httpd.conf)  :
 		# NOM_PROJET
 		Include "PATH\NOM_PROJET\data\vhost.txt"
 
-[ ]Ajouter le domaine associé dans votre fichier host :
+[ ]Ajouter le domaine associÃ© dans votre fichier host :
 		127.0.0.X          www.DOMAINE.dev
 
 [ ]Copier les fichiers settings.yml, app.yml et factories.yml depuis /data/install/ dans /apps/frontend/config
 [ ]Saisir le champs remember_cookie_name dans /frontend/config/app.yml
-[ ]Saisir le champs delivery_address dans /frontend/config/factories.yml pour recevoir les mails envoyés par l'application en environnement de dév
-[ ]Remplacer les champs username et password du mailer dans /frontend/config/factories.yml par vos login et mdp pour l'envoi de mail en dév
+[ ]Saisir le champs delivery_address dans /frontend/config/factories.yml pour recevoir les mails envoyÃ©s par l'application en environnement de dÃ©v
+[ ]Remplacer les champs username et password du mailer dans /frontend/config/factories.yml par vos login et mdp pour l'envoi de mail en dÃ©v
 [ ]Saisir le champs csrf_secret dans /frontend/config/settings.yml
 
-[ ]Redémarrer Wamp et tester l'url "www.DOMAINE.dev"
+[ ]RedÃ©marrer Wamp et tester l'url "www.DOMAINE.dev"
