@@ -38,49 +38,49 @@ sfGuardUserProfile:
     genre: 0
     first_name: Admin
     last_name: Admin
-    email: admin@pixel-cookers.com
+    email: admin@symfony-bootstrap.com
   sgu_ludovic_profile: 
     user_id: sgu_ludovic
     genre: 0
     first_name: Ludovic
     last_name: Meyer
-    email: ludovic@pixel-cookers.com
+    email: ludovic@symfony-bootstrap.com
   sgu_benjamin_profile: 
     user_id: sgu_benjamin
     genre: 0
     first_name: Benjamin
     last_name: Viaud
-    email: benjamin@pixel-cookers.com
+    email: benjamin@symfony-bootstrap.com
   sgu_eymeric_profile: 
     user_id: sgu_eymeric
     genre: 0
     first_name: Eymeric
     last_name: Taelman
-    email: eymeric@pixel-cookers.com
+    email: eymeric@symfony-bootstrap.com
   sgu_michel_profile: 
     user_id: sgu_michel
     genre: 0
     first_name: Michel
     last_name: Parpaillon
-    email: michel@pixel-cookers.com
+    email: michel@symfony-bootstrap.com
   sgu_nicolas_profile: 
     user_id: sgu_nicolas
     genre: 0
     first_name: Nicolas
     last_name: Dufreche
-    email: nicolas@pixel-cookers.com
+    email: nicolas@symfony-bootstrap.com
   sgu_colin_profile: 
     user_id: sgu_colin
     genre: 0
     first_name: Colin
     last_name: Bellino
-    email: colin@pixel-cookers.com
+    email: colin@symfony-bootstrap.com
   sgu_jeremie_profile: 
     user_id: sgu_jeremie
     genre: 0
     first_name: Jeremie
     last_name: Augustin
-    email: jeremie@pixel-cookers.com
+    email: jeremie@symfony-bootstrap.com
 
 sfGuardGroup:
   sgg_administrateur:
