@@ -2,9 +2,6 @@
 /.buildpath
 /.project
 /.settings
-/b.bat
-/c.bat
-/d.bat
 /web/frontend_dev.php
 /web/index.php
 /config/propel.ini
