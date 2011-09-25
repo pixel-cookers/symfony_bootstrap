@@ -5,8 +5,8 @@
             <datasource id="propel">
                 <adapter>mysql</adapter>
                 <connection>
-                    <dsn>mysql:host=localhost;dbname=sfbootstrap</dsn>
-                    <user>sfbootstrap</user>
+                    <dsn>mysql:host=localhost;dbname=symfony_bootstrap</dsn>
+                    <user>bootstrap_user</user>
                     <password></password>
                 </connection>
             </datasource>

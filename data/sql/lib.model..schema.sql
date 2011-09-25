@@ -16,7 +16,6 @@ CREATE TABLE `sf_guard_user_profile`
 	`genre` INTEGER,
 	`first_name` VARCHAR(45),
 	`last_name` VARCHAR(45),
-	`culture` VARCHAR(10),
 	`email` VARCHAR(100),
 	PRIMARY KEY (`id`),
 	INDEX `sf_guard_user_profile_FI_1` (`user_id`),

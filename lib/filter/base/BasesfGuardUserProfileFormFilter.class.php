@@ -16,7 +16,6 @@ abstract class BasesfGuardUserProfileFormFilter extends BaseFormFilterPropel
       'genre'      => new sfWidgetFormFilterInput(),
       'first_name' => new sfWidgetFormFilterInput(),
       'last_name'  => new sfWidgetFormFilterInput(),
-      'culture'    => new sfWidgetFormFilterInput(),
       'email'      => new sfWidgetFormFilterInput(),
     ));
 
@@ -25,7 +24,6 @@ abstract class BasesfGuardUserProfileFormFilter extends BaseFormFilterPropel
       'genre'      => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'first_name' => new sfValidatorPass(array('required' => false)),
       'last_name'  => new sfValidatorPass(array('required' => false)),
-      'culture'    => new sfValidatorPass(array('required' => false)),
       'email'      => new sfValidatorPass(array('required' => false)),
     ));
 
@@ -49,7 +47,6 @@ abstract class BasesfGuardUserProfileFormFilter extends BaseFormFilterPropel
       'genre'      => 'Number',
       'first_name' => 'Text',
       'last_name'  => 'Text',
-      'culture'    => 'Text',
       'email'      => 'Text',
     );
   }

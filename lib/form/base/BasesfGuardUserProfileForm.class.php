@@ -19,7 +19,6 @@ abstract class BasesfGuardUserProfileForm extends BaseFormPropel
       'genre'      => new sfWidgetFormInputText(),
       'first_name' => new sfWidgetFormInputText(),
       'last_name'  => new sfWidgetFormInputText(),
-      'culture'    => new sfWidgetFormInputText(),
       'email'      => new sfWidgetFormInputText(),
     ));
 
@@ -29,7 +28,6 @@ abstract class BasesfGuardUserProfileForm extends BaseFormPropel
       'genre'      => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'first_name' => new sfValidatorString(array('max_length' => 45, 'required' => false)),
       'last_name'  => new sfValidatorString(array('max_length' => 45, 'required' => false)),
-      'culture'    => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'email'      => new sfValidatorString(array('max_length' => 100, 'required' => false)),
     ));
 
