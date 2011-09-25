@@ -9,8 +9,8 @@ default:
     #language:     fr
     #robots:       index, follow
 
-  stylesheets:    [bootstrap/bootstrap.less]
-  javascripts:    []
+  stylesheets:    [bootstrap.css]
+  javascripts:    [ ]
 
   has_layout:     true
   layout:         layout
