@@ -2,8 +2,6 @@
 /.buildpath
 /.project
 /.settings
-/web/frontend_dev.php
-/web/index.php
 /config/propel.ini
 /config/databases.yml
 /apps/frontend/config/app.yml
