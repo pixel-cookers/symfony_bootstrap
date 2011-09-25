@@ -1,0 +1,1 @@
+php symfony propel:build-all --no-confirmation
