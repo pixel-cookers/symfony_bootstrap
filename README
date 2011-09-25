@@ -18,7 +18,6 @@ Fonctionnalités :
 
 Utilisation
 
-[ ]Créer le dossier du projet NOM_PROJET
 [ ]Cloner le repo Github
 [ ]Cré la BDD du projet (utf8_general_ci) et l'utilisateur associé
 		Privilès : Ajouter un utilisateur (NOM_USER_BDD, local, aucun mot de passe)
