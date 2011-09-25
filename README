@@ -18,7 +18,9 @@ Fonctionnalités :
 
 Utilisation
 
-[ ]Cloner le repo Github
+[ ]Cloner le repo Github de façon récursive (pour récupérer les submodules)
+     git clone --recursive git@github.com:pixel-cookers/symfony_bootstrap.git
+
 [ ]Cré la BDD du projet (utf8_general_ci) et l'utilisateur associé
 		Privilès : Ajouter un utilisateur (NOM_USER_BDD, local, aucun mot de passe)
 		Privilès spéfiques à une table : NOM_BDD
