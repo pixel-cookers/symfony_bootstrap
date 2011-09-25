@@ -10,6 +10,6 @@
 /apps/frontend/config/factories.yml
 /apps/frontend/config/settings.yml
 /data/vhost.txt
-/cache
-/log
+/cache/*
+/log/*
 /web/uploads
