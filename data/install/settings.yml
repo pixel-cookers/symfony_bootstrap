@@ -27,7 +27,7 @@ all:
     # Enable the database manager
     use_database:           true
     enabled_modules:        [default, sfGuardAuth]
-    standard_helpers:       [Partial, jQuery, Date, LessCss]
+    standard_helpers:       [Partial, jQuery, Date, Less]
     
     jquery_core:            jquery-1.6.4.min.js
     
