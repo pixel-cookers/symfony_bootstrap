@@ -11,7 +11,7 @@
 		<![endif]-->
 
 		<link rel="shortcut icon" href="/favicon.ico" />
-		<?php include_less_stylesheets() ?>
+		<?php include_stylesheets() ?>
 		<?php include_javascripts() ?>
 	</head>
 	<body>
