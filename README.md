@@ -41,7 +41,9 @@ Saisir les champs du fichier `/config/propel.ini`
 	propel.output.dir = PATH\TO\NOM_PROJET
 
 Copier le fichier `/data/install/databases.yml` dans `/config`
+
 Saisir les champs du fichier `/config/databases.yml`
+
 	dsn : 'mysql:host=localhost;dbname=NOM_BDD'
 	username : NOM_USER
 
