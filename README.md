@@ -11,17 +11,17 @@
  sfFormExtraPlugin (1.1.3)
  sfLessPlugin (1.1.0 => Less 1.1.3)
 
-## Fonctionnalités
+## FonctionnalitÃ©s
  Configuration initiale (settings.yml, factories.yml, app.yml)
  Envoi de mails (En cours)
  Register/Login/Logout/ForgotPass/Account (En cours)
 
 ## Utilisation
 
-Cloner le repo Github de façon récursive (pour récupérer les submodules)
+Cloner le repo Github de faÃ§on rÃ©cursive (pour rÃ©cupÃ©rer les submodules)
 	git clone --recursive git@github.com:pixel-cookers/symfony_bootstrap.git
 
-Créer la BDD du projet et l'utilisateur associé
+CrÃ©er la BDD du projet et l'utilisateur associÃ©
 
 Copier le fichier `/data/install/propel.ini` dans `/config`
 Saisir les champs du fichier `/config/propel.ini`
@@ -41,13 +41,13 @@ Inclure celui-ci dans votre config Apache (httpd.conf)  :
 	# NOM_PROJET
 	Include "PATH\NOM_PROJET\data\vhost.txt"
 
-Ajouter le domaine associé dans votre fichier host :
+Ajouter le domaine associÃ© dans votre fichier host :
 	127.0.0.X          www.DOMAINE.dev
 
 Copier les fichiers settings.yml, app.yml et factories.yml depuis `/data/install/` dans `/apps/frontend/config`
 Saisir le champs remember_cookie_name dans `/frontend/config/app.yml`
-Saisir le champs delivery_address dans `/frontend/config/factories.yml` pour recevoir les mails envoyés par l'application en environnement de dév
-Remplacer les champs username et password du mailer dans `/frontend/config/factories.yml` par vos login et mdp pour l'envoi de mail en dév
+Saisir le champs delivery_address dans `/frontend/config/factories.yml` pour recevoir les mails envoyÃ©s par l'application en environnement de dÃ©v
+Remplacer les champs username et password du mailer dans `/frontend/config/factories.yml` par vos login et mdp pour l'envoi de mail en dÃ©v
 Saisir le champs csrf_secret dans `/frontend/config/settings.yml`
 
-Redémarrer Wamp et tester l'url "www.DOMAINE.dev"
+RedÃ©marrer Wamp et tester l'url "www.DOMAINE.dev"
