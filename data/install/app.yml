@@ -4,13 +4,11 @@ all:
     success_signout_url:          main/index
     remember_key_expiration_age:  2592000 # 30 jours
     remember_cookie_name:         NOM_COOKIE_RememberMe
-    
-prod:
   sf_less_plugin:
     compile:  false
     
 dev:
   sf_less_plugin:
-    compile:  false
-    use_js:   true
+    compile:  true
+    use_js:   false
     use_compression:    false
