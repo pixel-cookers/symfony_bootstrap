@@ -15,7 +15,7 @@
 		<?php include_javascripts() ?>
 	</head>
 	<body>
-		<?php include_partial("main/menu") ?>
+		<?php include_partial("dashboard/menu") ?>
 		<div class="container has_menu">
 			<?php echo $sf_content ?>
 			<footer>
