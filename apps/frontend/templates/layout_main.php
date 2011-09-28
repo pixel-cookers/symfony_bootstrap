@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<?php include_partial("main/menu") ?>
-		<div class="container">
+		<div class="container has_menu">
 			<?php echo $sf_content ?>
 			<footer>
 				<p>&copy; Company 2011</p>

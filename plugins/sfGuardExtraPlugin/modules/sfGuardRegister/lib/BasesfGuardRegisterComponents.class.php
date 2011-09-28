@@ -13,15 +13,15 @@
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id: sfGuardUser.php 7634 2008-02-27 18:01:40Z fabien $
+ * @version    SVN: $Id: BasesfGuardAuthActions.class.php 7745 2008-03-05 11:05:33Z fabien $
  */
-class sfGuardUser extends PluginsfGuardUser
+class BasesfGuardRegisterComponents extends sfComponents
 {
-	public function getEmail(){
-		return $this->getProfile()->getEmail();
-	}
+  public function executeSend_request_confirm()
+  {
+  }
 
-	public function setEmail($email){
-		$this->getProfile()->setEmail($email);
-	}
+  public function executeSend_complete()
+  {
+  }
 }

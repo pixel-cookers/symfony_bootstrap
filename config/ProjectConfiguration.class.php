@@ -9,6 +9,7 @@ class ProjectConfiguration extends sfProjectConfiguration
   {
   	$this->enablePlugins(
 		'sfPropelORMPlugin',
+  		'sfGuardExtraPlugin',
   		'sfGuardPlugin',
   		'sfJqueryReloadedPlugin',
   		'sfFormExtraPlugin',

@@ -17,4 +17,13 @@
  */
 class sfGuardUserPeer extends PluginsfGuardUserPeer
 {
+	public static function retrieveByEmail($email, $isActive = true){
+	  $c = new Criteria();
+
+	  $c->addJoin(self::ID, sfGuardUserProfilePeer::USER_ID, Criteria::LEFT_JOIN);
+	  $c->add(sfGuardUserProfilePeer::EMAIL, $email);
+	  $c->add(self::IS_ACTIVE, $isActive);
+
+	  return self::doSelectOne($c);
+	}
 }

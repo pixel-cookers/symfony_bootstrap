@@ -8,20 +8,15 @@
  * file that was distributed with this source code.
  */
 
+require_once(dirname(__FILE__).'/../lib/BasesfGuardForgotPasswordActions.class.php');
+
 /**
  *
  * @package    symfony
  * @subpackage plugin
  * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
- * @version    SVN: $Id: sfGuardUser.php 7634 2008-02-27 18:01:40Z fabien $
+ * @version    SVN: $Id: actions.class.php 7634 2008-02-27 18:01:40Z fabien $
  */
-class sfGuardUser extends PluginsfGuardUser
+class sfGuardForgotPasswordActions extends BasesfGuardForgotPasswordActions
 {
-	public function getEmail(){
-		return $this->getProfile()->getEmail();
-	}
-
-	public function setEmail($email){
-		$this->getProfile()->setEmail($email);
-	}
 }

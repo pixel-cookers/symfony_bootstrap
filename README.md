@@ -10,18 +10,13 @@
  
  sfGuardPlugin (4.0.2)
  
+ sfGuardExtraPlugin (1.4)
+  
  sfJqueryReloadedPlugin (1.4.3 => jQuery 1.6.4)
  
  sfFormExtraPlugin (1.1.3)
  
  sfLessPlugin (1.1.0 => Less 1.1.3)
-
-## Fonctionnalités
- Configuration initiale (settings.yml, factories.yml, app.yml)
- 
- Envoi de mails (En cours)
- 
- Register/Login/Logout/ForgotPass/Account (En cours)
 
 ## Utilisation
 

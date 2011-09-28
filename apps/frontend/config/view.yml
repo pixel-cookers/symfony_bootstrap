@@ -9,7 +9,7 @@ default:
     #language:     fr
     #robots:       index, follow
 
-  stylesheets:    [twitter/bootstrap.css]
+  stylesheets:    [twitter/bootstrap.css, custom.css]
   javascripts:    [ ]
 
   has_layout:     true

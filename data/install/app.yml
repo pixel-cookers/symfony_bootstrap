@@ -5,10 +5,10 @@ all:
     remember_key_expiration_age:  2592000 # 30 jours
     remember_cookie_name:         NOM_COOKIE_RememberMe
   sf_less_plugin:
-    compile:  false
+    compile:           false
     
 dev:
   sf_less_plugin:
-    compile:  true
-    use_js:   false
+    compile:            true
+    use_js:             false
     use_compression:    false
